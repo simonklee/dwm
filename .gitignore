@@ -1,0 +1,5 @@
+config.h
+*.o
+*.1
+dwm
+status
