@@ -73,11 +73,13 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "urxvt", NULL };
 /* static const char *chromecmd[] = { "chromium", "--disable-accelerated-compositing", "--disable-accelerated-2d-canvas", "--disable-3d-apis", "--disable-accelerated-layers", "--disable-accelerated-plugins", "--disable-accelerated-video"}; */
 static const char *chromecmd[] = { "google-chrome", NULL};
+static const char *firefoxcmd[] = { "firefox", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_o,      spawn,          {.v = chromecmd } },
+	{ MODKEY,                       XK_f,      spawn,          {.v = firefoxcmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_i,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
